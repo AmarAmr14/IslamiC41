@@ -1,15 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightBlack"
+    android:background="@drawable/sebha_background"
     tools:context=".ui.main.fragments.quran.QuranFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:id="@+id/isalmiLogo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/isalmi_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".8" />
 
-</FrameLayout>
+<!--    <ImageView-->
+<!--        android:id="@+id/sebha_head"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="90dp"-->
+<!--        android:layout_marginBottom="328dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:contentDescription="@string/sebha_head"-->
+<!--        android:src="@drawable/sebha_head"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/sebha_body"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.567"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/sebha_body"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/sebha_head"
+        android:src="@drawable/sebha_body"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isalmiLogo" />
+
+    <TextView
+        android:id="@+id/zekrTV"
+        style="@style/white36BoldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/sebha_body"
+        app:layout_constraintEnd_toEndOf="@id/sebha_body"
+        app:layout_constraintStart_toStartOf="@id/sebha_body"
+        app:layout_constraintTop_toTopOf="@id/sebha_body"
+        android:text="سبحان الله" />
+
+    <TextView
+        android:id="@+id/counterTV"
+        style="@style/white36BoldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="70dp"
+        app:layout_constraintBottom_toBottomOf="@id/sebha_body"
+        app:layout_constraintEnd_toEndOf="@id/sebha_body"
+        app:layout_constraintStart_toStartOf="@id/sebha_body"
+        app:layout_constraintTop_toTopOf="@id/sebha_body"
+        tools:text="30" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

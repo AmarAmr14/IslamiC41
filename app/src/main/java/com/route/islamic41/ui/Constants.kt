@@ -351,6 +351,12 @@ object Constants {
         "5",
         "6"
     )
+    val azkar = listOf(
+        "سبحان الله",
+        "الحمد لله",
+        "الله اكبر",
+
+    )
     val surasList: ArrayList<Sura>
         get() {
             val surasList = ArrayList<Sura>()

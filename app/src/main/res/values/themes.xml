@@ -29,6 +29,11 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/primary</item>
     </style>
+    <style name="white36BoldText">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 
     <style name="black24BoldText">
         <item name="android:textSize">24sp</item>
